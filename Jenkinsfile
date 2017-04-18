@@ -3,7 +3,8 @@ node {
 
   stage 'Build'
   sh("echo Build")
-
+  
+  // Run tests
   stage 'Run tests'
   sh("echo Run test")
 
