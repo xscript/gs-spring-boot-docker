@@ -3,7 +3,7 @@ node {
   
   // Build
   stage 'Build'
-  sh("echo Build")
+  sh("cd complete; mvn package;")
   
   // Run tests
   stage 'Run tests'
