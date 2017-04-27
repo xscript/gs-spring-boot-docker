@@ -6,10 +6,10 @@ node {
   sh("cd complete; mvn package;")
   
   // Run tests
-  stage 'Run tests'
+  stage 'Test'
   sh("echo Run test")
 
   // Publish
-  stage 'Publish image to registry'
+  stage 'Publish docker image'
   sh("echo Publish image")
 }
